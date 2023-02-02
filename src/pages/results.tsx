@@ -71,11 +71,11 @@ const Results: React.FC<IProps> = ({ userInfo }) => {
           {(userInfo.question2_BetweenFirstLastInputSeconds! / 1000).toFixed(2)} s.
         </p>
         <p>
-          <span>Number of changes in input:</span>
+          <span>Number of selections:</span>
           {userInfo.question2_NumberOfSelections}
         </p>
         <p>
-          <span>The list of saved ages:</span>
+          <span>The list of selected options:</span>
           {userInfo.question2_EditList.join(", ")}
         </p>
       </div>
