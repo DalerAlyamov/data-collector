@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/DalerAlyamov/data-collector/static/css/main.33032045.css",
-    "main.js": "/DalerAlyamov/data-collector/static/js/main.ab75a2b3.js",
-    "index.html": "/DalerAlyamov/data-collector/index.html",
-    "main.33032045.css.map": "/DalerAlyamov/data-collector/static/css/main.33032045.css.map",
-    "main.ab75a2b3.js.map": "/DalerAlyamov/data-collector/static/js/main.ab75a2b3.js.map"
+    "main.css": "/data-collector/static/css/main.33032045.css",
+    "main.js": "/data-collector/static/js/main.ab75a2b3.js",
+    "index.html": "/data-collector/index.html",
+    "main.33032045.css.map": "/data-collector/static/css/main.33032045.css.map",
+    "main.ab75a2b3.js.map": "/data-collector/static/js/main.ab75a2b3.js.map"
   },
   "entrypoints": [
     "static/css/main.33032045.css",
