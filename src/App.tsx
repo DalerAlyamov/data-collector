@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* node_modules */
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 
-function App() {
+/* absolute */
+import Login from "pages/login";
+import Question1 from "pages/question-1";
+import Question2 from "pages/question-2";
+import Results from "pages/results";
+import initialData from "initialData";
+import "global.scss";
+
+const App: React.FC = (): JSX.Element => {
+  const [userInfo, setUserInfo] = React.useState<IUserInfo>(initialData);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/login" element={<Login userInfo={userInfo} setUserInfo={setUserInfo} />} />
+      <Route path="/question-1" element={<Question1 userInfo={userInfo} setUserInfo={setUserInfo} />} />
+      <Route path="/question-2" element={<Question2 userInfo={userInfo} setUserInfo={setUserInfo} />} />
+      <Route path="/results" element={<Results userInfo={userInfo} />} />
+      <Route path="*" element={<Navigate to="/login" />} />
+    </Routes>
   );
-}
+};
 
 export default App;

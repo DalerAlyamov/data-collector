@@ -1,0 +1,27 @@
+const initialData: IUserInfo = {
+  ip: undefined,
+  city: undefined,
+  country: undefined,
+  loc: undefined,
+  org: undefined,
+  region: undefined,
+  timezone: undefined,
+  name: undefined,
+  password: undefined,
+  login_TotalSecondsOnPage: undefined,
+  login_BetweenFirstLastInputSeconds: undefined,
+  login_NumberOfEdits: 0,
+  age: undefined,
+  question1_TotalSecondsOnPage: undefined,
+  question1_NumberOfEdits: 0,
+  question1_BetweenFirstLastInputSeconds: undefined,
+  question1_EditList: [],
+  favoriteSeason: "Winter",
+  question2_TotalSecondsOnPage: undefined,
+  question2_BetweenFirstLastInputSeconds: undefined,
+  question2_NumberOfSelections: 0,
+  question2_EditList: [],
+  deviceModel: undefined,
+};
+
+export default initialData;
